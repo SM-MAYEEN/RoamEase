@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { ExternalLink, Navigation } from 'lucide-react';
+import { useEffect, useRef } from 'react';
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 
 function MapUpdater({ selectedTour, markerRefs }) {
   const map = useMap();
@@ -31,11 +31,13 @@ export default function TourMap({ tours, selectedTour, onSelectTour }) {
   const markerRefs = useRef({});
 
   return (
-    <div id="tour-map-section" className="w-full h-[520px] rounded-3xl overflow-hidden border border-slate-200/80 shadow-xl shadow-slate-200/50 relative z-0">
+    
+    <div id="tour-map-section" className="w-full h-full relative z-0">
       <MapContainer
         center={defaultCenter}
         zoom={5}
         scrollWheelZoom={false}
+        attributionControl={false}
         className="w-full h-full"
       >
         <TileLayer

@@ -41,7 +41,7 @@ export default function Footer() {
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sm-mayeen/"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-300 transition-all border border-slate-800"
@@ -54,7 +54,7 @@ export default function Footer() {
 
             {/* Portfolio */}
             <a
-              href="https://mayeen.vercel.app"
+              href="https://sm-mayeen.vercel.app"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 text-slate-300 transition-all border border-slate-800"

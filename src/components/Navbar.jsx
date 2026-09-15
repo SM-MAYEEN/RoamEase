@@ -2,18 +2,18 @@ import React from 'react';
 import { Compass, Heart, Luggage, Sparkles, Sun, Moon } from 'lucide-react';
 
 export default function Navbar({ 
-  onOpenWishlist, 
+onOpenWishlist, 
   onOpenBookings, 
   wishlistCount, 
   bookingsCount,
   darkMode,
   setDarkMode,
-  onGoHome // <-- নতুন প্রপ
+  onGoHome
 }) {
   return (
-    <nav className="sticky top-0 z-40 bg-white/85 dark:bg-slate-900/85 backdrop-blur-2xl border-b border-white/40 dark:border-slate-800/80 shadow-[0_4px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.3)] transition-colors duration-300">
+   <nav className="fixed top-0 left-0 right-0 z-50 bg-white/85 dark:bg-slate-900/85 backdrop-blur-2xl border-b border-white/40 dark:border-slate-800/80 shadow-[0_4px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.3)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        
+      
         {/* HD Premium Brand Logo with Scroll-to-Top trigger */}
         <div 
           onClick={onGoHome}
